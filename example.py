@@ -25,7 +25,7 @@ def main():
 
 
 if __name__ == '__main__':
-    # Only executed condition is fullfilled.
+    # Only executed if condition is fullfilled.
     main()
 
 
