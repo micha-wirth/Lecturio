@@ -19,21 +19,22 @@ try:
     1 / 0
 except ZeroDivisionError as error:
     # raise error
+    None
 
 #raise ZeroDivisionError('Eigene Ausnahme geworfen')
 
-def fun():
-    print("Test")
-    pass
+def fun_test():
     try:
-        1 / 0
+        return 1 / 1
     except ZeroDivisionError as error:
         print("Division durch Null")
-   # finally:
-    #    print("Wird immer ausgeführt")
+    finally:
+        print("Wird immer ausgeführt")
+        return None
 
 
-#fun()
+fun_test()
+
 
 class MyException(Exception):
     pass
